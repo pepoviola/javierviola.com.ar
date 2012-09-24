@@ -55,6 +55,67 @@
         	section b{font-weight:bold;}
         	
         	footer{margin:10px;display:block;font-size:.8em;color:#999;}
+		img {border-raius:5px;}
+		.polaroid {
+		  position: relative;
+		  width: 220px;
+		}
+ 
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+  -webkit-border-radius: 5px;
+      moz-border-radius: 5px;
+      ms-border-radius: 5px;
+         border-radius: 5px;
+}
+ 
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 85%;
+  bottom: 15px;
+/*  font: 400 18px/1 'Kaushan Script', cursive;*/
+  color: #888;
+  font-weight: bold;
+}	
+
+a.social.github {
+	background: url(./social_icons.png) -68px 0px no-repeat;
+	}
+a.social.linkedin {
+	background: url(./social_icons.png) -102px 0px no-repeat;
+}
+
+a.social {
+	display: block;
+	width: 34px;
+	height: 34px;
+	background: url(./social_icons.png);
+	margin: 3px;
+	border-bottom:none;
+}
+a.social.twitter {
+	background: url(./social_icons.png) 0 0px no-repeat;
+}
+a.social.mail {
+	background: url(./social_icons.png) -136px 0px no-repeat;
+}
+ul.unstyled, ol.unstyled {
+	margin: 8%;
+/*	margin-left: 0;*/
+	list-style: none;
+}
+ul.buttons li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+	float: left;
+}
         </style> 
 		
  
@@ -62,10 +123,20 @@
  
     <body class=""> 
          <header> 
-         	<h1>Javier Viola</h1> 
+	 <!--	<h1>Javier Viola</h1> -->
          	
          	<dl> 
-         		<dt>Email</dt> 
+			<div class="polaroid">
+				<p>Javier Viola</p>
+	         		<dd><img src="me2.jpg"  height="150"  width="150" alt="Javier Viola Photo" title="Javier Viola" /></dd> 
+			</div>
+			<ul class="buttons unstyled">
+				<li><a href="http://github.com/pepoviola" rel="me" class="social github" title="Go to github.com/pepoviola" target="_blank"></a></li>
+				<li><a href="http://www.linkedin.com/pub/javier-viola-villanueva/11/191/623" rel="me" class="social linkedin" title="Go to LinkedIn profile" target="_blank"></a></li>
+				<li><a href="http://www.twitter.com/pepoviola" rel="me" class="social twitter" title="Go to twitter.com/pepoviola" target="_blank"></a></li>
+				<li><a href="mailto:viola.villanueva.javier@gmail.com" rel="me" class="social mail" title="Leave feedback "></a></li>				
+										  	</ul>
+<!--        		<dt>Email</dt> 
          		<dd style="font-size:15px;">viola.villanueva.javier@gmail.com</dd> 
          		<dt>Website</dt> 
          		<dd><a href="http://javierviola.com.ar">http://javierviola.com.ar</a></dd> 
@@ -73,8 +144,8 @@
          		<dd><a target="_blank" href="http://twitter.com/pepoviola">@pepoviola</a></dd> 
          		<dt>LinkedIn</dt> 
          		<dd><a target="_blank" href="http://www.linkedin.com/pub/javier-viola-villanueva/11/191/623">Profile</a></dd> 
-         		<dt class="accessaid">Photo</dt> 
-         		<!--<dd><img src="me.jpeg"  height="100"  width="100" alt="Javier Viola Photo" title="Javier Viola" /></dd> -->
+			<dt class="accessaid">Photo</dt> 
+			-->
          	</dl> 
          </header> 
          
